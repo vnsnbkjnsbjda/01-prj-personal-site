@@ -1,7 +1,229 @@
-/* Add you CSS here */
+/*Basic formatting*/
+body {
+    color: rgba(52, 26, 37, 0.726);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-size: 1em;
+    background-image: url("img/white_dotted_grid.png");
+    z-index: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 1000px;
+}
 
-body{
-  text-align: center;
-  margin: 0;
-  padding: 0;
+a {
+    text-decoration: none;
+    color: rgba(52, 26, 37, 0.726);
+
+}
+
+p {
+    margin: 1em;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0.3em;
+}
+
+h2 {
+    text-transform: uppercase;
+    background: #ffaab8;
+    margin: 0px 20px 0px 20px;
+    padding: 10px 1px 10px 1px;
+    box-shadow: 0 2px 4px #afafc2;
+
+}
+
+/*Fonts and icons*/
+.fa-brands,
+.fa-solid {
+    font-size: 40px;
+    color: #f0425f;
+    ;
+}
+
+/*Format the main chunk of the page*/
+main {
+    text-align: center;
+    justify-items: center;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+}
+
+
+article {
+    margin: 1em 1em 1em 1em;
+}
+
+section {
+    background: #ffdde3;
+    margin: 0px 20px 10px 20px;
+    border: 1px solid lightblue;
+    outline: 2px dashed #f0425f;
+    outline-offset: -5px;
+    box-shadow: 0 2px 4px #afafc2;
+}
+
+#profile {
+    width: 80%;
+    grid-row: 1;
+    grid-column: 1/3;
+}
+
+#skills {
+    width: 80%;
+    grid-row: 2;
+    grid-column: 1/3;
+}
+
+/*Skills section*/
+.skillsSect table {
+    padding: 1em;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 1em;
+
+}
+
+.skillsSect table td {
+    background: white;
+    padding: 1em;
+    width: 50%;
+    outline: 1px solid #e6e6e6;
+    outline-offset: -5px;
+    border-radius: 15px;
+    box-shadow: 0 0 2px #e6e6e6;
+    ;
+}
+
+.skillsSect table td:hover {
+    transform: scale(90%);
+    transition-duration: 0.3s;
+}
+
+#experience {
+    width: 100%;
+    grid-row: 3;
+    grid-column: 1;
+}
+
+#projects {
+    width: 100%;
+    grid-row: 3;
+    grid-column: 2;
+}
+
+/*Format the topside*/
+header {
+    background: #ff798b;
+    position: relative;
+    margin: 0em 0em 0em 0em;
+    padding: 0.05em 0 0.05em 0;
+    height: 20em;
+    overflow: hidden;
+}
+
+#bunny {
+    width: 128px;
+    border: 10px solid white;
+    border-radius: 20%;
+    box-shadow: 0 0 10px #661935;
+    margin: 1em;
+    z-index: 2;
+}
+
+#header-l1 {
+    color: rgb(2, 32, 39);
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#header-l2 {
+    position: absolute;
+    z-index: 1;
+    opacity: 15%;
+}
+
+
+nav {
+    background: #008080;
+    text-align: center;
+    cursor: pointer;
+    margin: 0em 0em 1em 0em;
+    padding: 0.5em;
+    box-shadow: 0 2px 4px #afafc2;
+}
+
+nav a {
+    color: white;
+    text-align: left;
+    cursor: pointer;
+    margin: 1em;
+    padding: 0.3em 1em;
+}
+
+nav a:hover {
+    color: black;
+    background: #10d1ce;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+/*Format the botside*/
+footer {
+    position: relative;
+    background: #ff798b;
+    height: 8em;
+    margin: 0em 0em 0em 0em;
+    padding: 2em 0 2em 0;
+    box-shadow: 0 -2px 4px #afafc2;
+    overflow: hidden;
+}
+
+#footer-l1 {
+    color: rgb(2, 32, 39);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+#footer-l2 {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: 1;
+    opacity: 15%;
+}
+
+/*Other decorative properties*/
+
+/*Responsive Properties*/
+@media (max-width: 800px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+    }
+
+    #experience {
+        grid-row: 3;
+        grid-column: 1/3;
+
+    }
+
+    #projects {
+        grid-row: 4;
+        grid-column: 1/3;
+    }
 }

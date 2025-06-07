@@ -1,50 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>My Personal Site</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
+
 <body>
-  <header>
-    <h1>Portfolio of Mina Kieu</h1>
-  </header>
-  <nav>
-    <a>Home</a>
-    <a>Skills</a>
-    <a>Experience</a>
-    <a>Projects</a>
-  </nav>
-  <main>
-    <article>
-      <h2>Profile</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum expedita recusandae, neque atque soluta doloremque? Deserunt error perspiciatis molestias molestiae ducimus! Exercitationem, aspernatur numquam voluptates qui voluptatem saepe eligendi odio?</p>
-    </article>
+    <header id="header">
+        <div id="header-l1">
+            <img id="bunny" src="img/bunny_32_32.png">
+            <h1>Mina Kieu</h1>
+            <p>Lover of art and technology</p>
+        </div>
+        
+        <div id="header-l2">
+            <img src="img/melon_washi.png"></img>
+        </div>
 
-    <article>
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-      </ul>
-    </article>
+    </header>
 
-    <article>
-      <h2>Experience</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Quisquam, voluptatum. Quisquam, voluptatum.</p>
-    </article>
+    <nav>
+        <a href="#">Home</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#projects">Projects</a>
+    </nav>
+
+    <main>
+        <article id="profile">
+            <h2>Profile Summary</h2>
+            <section class="profileSect">
+                <p>
+                    Greetings! 👋 I am a front end developer with passion for visual arts and technology!
+                    I am versed with both front-end and back-end languages, so I am able to integrate
+                    the two despite being primarily front-end. Allow me to humbly catch the eyes of onlookers with design and impress with
+                    code! 
+                </p>
+            </section>
+        </article>
+
+        <article id="skills">
+            <h2>Skills</h2>
+            <section class="skillsSect">
+                <table>
+                    <tr>
+                        <td>
+                            <i class="fa-brands fa-html5"></i> HTML
+                        </td>
+                        <td>
+                            <i class="fa-brands fa-css3-alt"></i> CSS
+                        </td>
+                    </tr>
+                        <td>
+                            <i class="fa-brands fa-python"></i> Python
+                        </td>
+                        <td>
+                            <i class="fa-brands fa-js"></i> JavaScript
+                        </td>
+                    <tr>
+                        <td>
+                            <i class="fa-solid fa-file-code"></i></i> C
+                        </td>
+                        <td>
+                            <i class="fa-brands fa-java"></i> Java
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <i class="fa-solid fa-file-code"></i> C++
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </article>
+
+        <article id="experience">
+            <h2>Experience</h2>
+            <section class="experienceSect">
+                <div class="workCard">
+                    <h3>🧠 Algorithmic AI</h3>
+                    <p>Tic-Tac-Toe game that allows to user to play against a Computer.</p>
+                </div>
+                <div class="workCard">
+                    <h3>🤖 Neural Networks | Machine Learning</h3>
+                    <p>Networks that classify written numbers, identify authors from text and translate text naively.</p>
+                </div>
+                <div class="workCard">
+                    <h3>📸 Computer Vision</h3>
+                    <p>Geometric detections, face detections, and template matching.</p>
+                </div>
+                <div class="workCard">
+                    <h3>🖥️ Other Software</h3>
+                    <p>
+                        Assist in developing a local multiplayer word search game with complete UI for rank, player ready status,
+                        match board, and functional chat. 
+                    </p>
+                </div>
+            </div>
+            </section>
+        </article>
+
+        
+
+        <article id="projects">
+            <h2>Projects</h2>
+            <section class="projectsSect">
+                <div class="workCard">
+                    <h3>🎮 Webpage for Tic-Tic-Toe</h3>
+                    <p>Ongoing | Webpage to compete against a computer in Tic-Tac-Toe.</p>
+                </div>
+
+                <div class="workCard">
+                    <h3>💐 Webpage for Flower Shop</h3>
+                    <p>Ongoing | Webpage for a flower shop.</p>
+                </div>
+            </section>
+        </article>
+    </main>
     
-    <article>
-      <h2>Projects</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Quisquam, voluptatum. Quisquam, voluptatum.</p>
-    </article>
-
-  </main>
-  <footer>
-    <p>Have a nice day!</p>
-    <input type="button" value="Hop back up!"></button>
-  </footer>
+    <footer>
+        <div id="footer-l1">
+            <p>© Mina Kieu 2025</p>
+        </div>
+        <div id="footer-l2">
+            <img src="img/melon_washi.png"></img>
+        </div>
+    </footer>
 </body>
+
 </html>
